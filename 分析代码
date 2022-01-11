@@ -1,0 +1,11 @@
+# Group 1
+import numpy as np
+import pandas as pd
+import gc
+import warnings
+warnings.filterwarnings('ignore')
+from datetime import datetime
+
+# Group 1
+df_original = pd.read_excel('./京东消费者分析数据.xlsx')
+df=df_original.sample(frac=0.3,random_state =None)
